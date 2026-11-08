@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drogopis – Polityka prywatności</title>
+<!--
+  Pola oznaczone <mark> (żółte) trzeba uzupełnić przed publikacją: nazwa i adres firmy, e-mail do kontaktu.
+  Plik jest samodzielny (bez zewnętrznych skryptów) - można go wgrać na drogopis.pl/polityka-prywatnosci.
+  Gdy w aplikacji pojawi się synchronizacja w chmurze, konto lub analityka - politykę trzeba zaktualizować.
+-->
+<style>
+  :root { --bg:#fff; --fg:#1b1f23; --muted:#5a636d; --line:#d9dee3; --accent:#0a3d7a; --mark:#fff3a3; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1621; --fg:#e6ebf1; --muted:#9aa6b2; --line:#2a3644; --accent:#7fb2ff; --mark:#5c5200; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:1.8rem; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:32px 0 8px; color:var(--accent); }
+  p, li { margin:8px 0; }
+  .meta { color:var(--muted); font-size:.95rem; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; }
+  mark { background:var(--mark); color:inherit; padding:0 3px; border-radius:3px; }
+  a { color:var(--accent); }
+  @media (max-width:560px) { th:nth-child(3), td:nth-child(3) { display:none; } }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Polityka prywatności aplikacji Drogopis</h1>
+<p class="meta">Ostatnia aktualizacja: 8 listopada 2026 r.</p>
+
+<p>Drogopis (identyfikator aplikacji <code>com.jezierczak.drogopis</code>) pomaga prowadzić ewidencję przebiegu pojazdu:
+kilometrówkę dla celów PIT/CIT oraz ewidencję przebiegu dla celów VAT. Ta polityka opisuje, jakie dane aplikacja przetwarza,
+gdzie one trafiają i jakie ma się nad nimi kontrolę.</p>
+
+<h2>1. Najważniejsze w skrócie</h2>
+<ul>
+  <li><b>Dane są przechowywane na telefonie.</b> Aplikacja nie ma konta ani własnych serwerów i nie wysyła przejazdów, tras
+      ani danych osobowych do administratora aplikacji.</li>
+  <li>Dokumenty (PDF, CSV) powstają na telefonie i trafiają tylko tam, gdzie użytkownik sam je udostępni.</li>
+  <li>Z usług zewnętrznych aplikacja korzysta w ograniczonym zakresie: mapy, reklamy, płatności i ustalanie adresów (szczegóły w pkt 5).</li>
+  <li>Lokalizacja służy wyłącznie do rejestrowania przejazdów i nie jest sprzedawana.</li>
+</ul>
+
+<h2>2. Administrator</h2>
+<p>Dostawcą aplikacji jest <mark>[PEŁNA NAZWA FIRMY]</mark>, <mark>[ADRES]</mark>, NIP <mark>[NIP]</mark>
+(dalej: „dostawca”). Kontakt w sprawach prywatności: <mark>[ADRES E-MAIL]</mark>.</p>
+<p>Dane wprowadzone do aplikacji (kierowca, firma, pojazdy, przejazdy) pozostają na urządzeniu użytkownika; dostawca nie ma do nich dostępu.
+W zakresie tych danych to użytkownik decyduje o celach i sposobach ich przetwarzania. Dostawca przetwarza dane osobowe tylko wtedy,
+gdy użytkownik sam się z nim skontaktuje (np. e-mailem w sprawie aplikacji).</p>
+
+<h2>3. Jakie dane przetwarza aplikacja i po co</h2>
+<table>
+  <tr><th>Dane</th><th>Cel</th><th>Gdzie są</th></tr>
+  <tr><td>Imię, nazwisko i adres kierowcy</td><td>Dane w kilometrówce i dokumentach</td><td>Telefon</td></tr>
+  <tr><td>Nazwa, NIP i adres firmy</td><td>Nagłówek ewidencji i dokumentów</td><td>Telefon</td></tr>
+  <tr><td>Pojazdy: numer rejestracyjny, marka i model, pojemność silnika, stan licznika</td><td>Prowadzenie ewidencji przebiegu</td><td>Telefon</td></tr>
+  <tr><td>Przejazdy: czas, trasa GPS, kilometry, miejsca (adresy), cel wyjazdu</td><td>Ewidencja i dokumenty</td><td>Telefon</td></tr>
+  <tr><td>Nazwy i adresy sparowanych urządzeń Bluetooth przypisanych do pojazdu</td><td>Rozpoznanie pojazdu i propozycja rozpoczęcia nagrywania</td><td>Telefon</td></tr>
+  <tr><td>Ustawienia aplikacji, harmonogram pracy</td><td>Działanie aplikacji</td><td>Telefon</td></tr>
+</table>
+
+<h2>4. Uprawnienia systemowe</h2>
+<table>
+  <tr><th>Uprawnienie</th><th>Po co</th><th>Uwagi</th></tr>
+  <tr><td>Lokalizacja (dokładna)</td><td>Liczenie kilometrów i zapis trasy przejazdu</td><td>Wymagane do rejestrowania przejazdów</td></tr>
+  <tr><td>Lokalizacja „Zawsze zezwalaj” (w tle)</td><td>Rozpoczęcie nagrywania z harmonogramu i po restarcie telefonu oraz wykrycie ruchu pojazdu, gdy aplikacja jest zamknięta</td><td>Opcjonalne; bez niego nagrywanie działa tylko przy otwartej aplikacji</td></tr>
+  <tr><td>Aktywność fizyczna</td><td>Rozpoznanie, czy użytkownik jest w pojeździe, czy poza nim; mniejsze zużycie baterii</td><td>Opcjonalne; bez niego aplikacja korzysta tylko z GPS</td></tr>
+  <tr><td>Urządzenia w pobliżu (Bluetooth)</td><td>Rozpoznanie pojazdu po jego Bluetooth i pytanie o start nagrywania</td><td>Opcjonalne; dotyczy tylko sparowanych urządzeń</td></tr>
+  <tr><td>Powiadomienia</td><td>Stan nagrywania, pytania o start i koniec przejazdu, podsumowanie dnia</td><td>Opcjonalne</td></tr>
+  <tr><td>Alarmy i przypomnienia</td><td>Włączanie i wyłączanie nagrywania o godzinach z harmonogramu</td><td>Opcjonalne</td></tr>
+  <tr><td>Uruchamianie po restarcie</td><td>Przywrócenie harmonogramu po restarcie telefonu</td><td>—</td></tr>
+  <tr><td>Internet</td><td>Mapy, reklamy, płatności i ustalanie adresów</td><td>Aplikacja działa bez internetu poza tymi funkcjami</td></tr>
+  <tr><td>Identyfikator reklamowy</td><td>Wyświetlanie reklam w wersji bezpłatnej</td><td>Użytkownicy Premium nie widzą reklam</td></tr>
+</table>
+<p>Zgody można w każdej chwili zmienić w ustawieniach telefonu. Brak zgody na funkcje opcjonalne ogranicza automatyzację, ale nie blokuje ręcznego prowadzenia ewidencji.</p>
+
+<h2>5. Usługi zewnętrzne</h2>
+<p>Aplikacja korzysta z usług firmy Google. Dane przetwarzane w ich ramach podlegają politykom prywatności Google
+(<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>).</p>
+<ul>
+  <li><b>Usługi lokalizacji i rozpoznawania aktywności Google Play</b> – ustalanie położenia i rozpoznawanie, czy użytkownik jest w pojeździe.</li>
+  <li><b>Google Maps SDK</b> – wyświetlanie map trasy. Przy korzystaniu z mapy Google może przetwarzać m.in. adres IP, dane urządzenia i widoczny obszar mapy.</li>
+  <li><b>Ustalanie adresów</b> – nazwy miejsc na trasie aplikacja ustala usługą systemową Androida (Geocoder); współrzędne mogą być w tym celu przekazane do usługi Google.</li>
+  <li><b>Google Play Billing</b> – zakup i obsługa subskrypcji Premium. Płatności obsługuje Google; dostawca nie ma dostępu do danych karty ani konta płatniczego.</li>
+  <li><b>Google AdMob i Google UMP</b> – reklamy w wersji bezpłatnej oraz formularz zgody na reklamy. Reklamodawcy i Google mogą przetwarzać identyfikator reklamowy, adres IP i dane urządzenia.
+      Zgodę na reklamy spersonalizowane można zmienić; wersja Premium jest bez reklam.</li>
+</ul>
+<p>Aplikacja nie używa narzędzi analitycznych ani raportowania awarii, które wysyłałyby dane o użytkowniku do dostawcy.</p>
+
+<h2>6. Kopia zapasowa</h2>
+<p>Jeżeli na telefonie włączona jest kopia zapasowa Androida (Google), system może automatycznie zapisywać dane aplikacji, w tym ewidencję,
+w kopii na koncie Google użytkownika i przywracać je na nowym telefonie. Dzieje się to na zasadach Google, poza kontrolą dostawcy.
+Można to wyłączyć w ustawieniach telefonu (Google → Kopia zapasowa).</p>
+
+<h2>7. Udostępnianie danych</h2>
+<p>Dostawca nie sprzedaje danych i nie przekazuje ich nikomu, ponieważ ich nie posiada. Dane opuszczają telefon tylko w sytuacjach z pkt 5 i 6
+oraz wtedy, gdy użytkownik sam wyeksportuje lub udostępni dokument (PDF, CSV) – np. księgowej lub w innej aplikacji.</p>
+
+<h2>8. Jak długo i jak usunąć dane</h2>
+<p>Dane są przechowywane do czasu ich usunięcia przez użytkownika. Aplikacja nie usuwa ewidencji automatycznie – obowiązek jej
+przechowywania (co najmniej 5 lat) i wykonywania kopii zapasowych spoczywa na użytkowniku. Odinstalowanie aplikacji usuwa dane
+z telefonu (kopia na koncie Google, jeśli istnieje, jest usuwana w ustawieniach Google). Pojedyncze przejazdy, pojazdy i miejsca można usuwać w aplikacji.</p>
+
+<h2>9. Prawa użytkownika</h2>
+<p>Dane są na urządzeniu użytkownika, więc ma on nad nimi pełną kontrolę: może je przeglądać, poprawiać, eksportować i usuwać w aplikacji.
+W sprawach danych, które dostawca otrzymał w korespondencji, przysługują prawa wynikające z RODO (dostęp, sprostowanie, usunięcie, ograniczenie,
+sprzeciw, przenoszenie) oraz prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).
+Kontakt: <mark>[ADRES E-MAIL]</mark>.</p>
+
+<h2>10. Dzieci</h2>
+<p>Aplikacja jest przeznaczona dla osób dorosłych prowadzących ewidencję pojazdu i nie jest skierowana do dzieci.</p>
+
+<h2>11. Zmiany polityki</h2>
+<p>Politykę można zmieniać, np. po dodaniu nowych funkcji. Aktualna wersja jest zawsze dostępna pod adresem, pod którym została opublikowana,
+a data ostatniej aktualizacji znajduje się na górze strony.</p>
+
+</main>
+</body>
+</html>
